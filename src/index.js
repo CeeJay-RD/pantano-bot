@@ -1,10 +1,10 @@
 import { Client, GatewayIntentBits } from 'discord.js';
-import { config } from 'dotenv'
+import { config } from 'dotenv';
 import { REST } from 'discord.js';
 
 config();
 
-const TOKEN = process.env.BOT_TOKEN
+const TOKEN = process.env.BOT_TOKEN;
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 const rest = REST({ version: '10' }).setToken(TOKEN);
